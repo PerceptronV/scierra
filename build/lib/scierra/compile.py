@@ -1,6 +1,6 @@
 import os
 
-class compile():
+class Compiler():
 
     def build(filedir, filename, outname):
         cmd = ['cd {}'.format(filedir),
