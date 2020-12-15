@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: scierra
+Version: 0.1
+Summary: A Simulated C++ Interpreter
+Home-page: https://github.com/PerceptronV/scierra
+Author: PerceptronV
+Author-email: neutrinovs@gmail.com
+License: UNKNOWN
+Description: # Scierra
+        _a **S**imulated **C**++ **I**nt**ER**preter with **R**ecurrent **A**daptation_
+        
+        Scierra is a Python package that makes use of the GCC CLI to simulate an interpreted C++ environment.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown

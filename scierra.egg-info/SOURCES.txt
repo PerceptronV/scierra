@@ -1,0 +1,15 @@
+README.md
+setup.py
+scierra/__init__.py
+scierra/scierra.py
+scierra.egg-info/PKG-INFO
+scierra.egg-info/SOURCES.txt
+scierra.egg-info/dependency_links.txt
+scierra.egg-info/entry_points.txt
+scierra.egg-info/top_level.txt
+scierra/compile/__init__.py
+scierra/compile/compile.py
+scierra/sim/__init__.py
+scierra/sim/sim.py
+scierra/utils/__init__.py
+scierra/utils/utils.py
