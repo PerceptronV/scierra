@@ -17,7 +17,7 @@ Scierra is a Python package that makes use of the GCC CLI to simulate an interpr
 ## Installation
 ### Prerequisites:
 * GCC (GNU Compiler Collection) must be **installed** and **added to PATH**.
-    This is to allow Python to access G++ through the command line. MinGW has been tested to work on Windows, so Cygwin should, too. However, this hasn't been tested.
+    This allows Python to access G++ through the command line. MinGW has been tested to work on Windows.
 
 ### Install with PIP
 Install with pip using:
