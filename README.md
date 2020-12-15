@@ -1,5 +1,5 @@
 # Scierra
-A _**S**_imulated _**C**_++ _**I**_nt_**er**_preter with _**R**_ecurrent _**A**_daptation
+A ***S***imulated ***C***++ ***I***nt***er***preter with ***R***ecurrent ***A***daptation
 
 Scierra is a Python package that makes use of the GCC CLI to simulate an interpreted C++ environment.
 
