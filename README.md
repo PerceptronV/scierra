@@ -1,2 +1,2 @@
 # Scierra
-A **S**imulated **C**++ **I**nt**e**rpreter with **Recurrent** **Adaptation**
+_a **S**imulated **C**++ **I**nt**E**rpreter with **R**ecurrent **A**daptation_
