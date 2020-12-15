@@ -1,3 +1,0 @@
-[console_scripts]
-scierra = scierra.scierra:main
-
