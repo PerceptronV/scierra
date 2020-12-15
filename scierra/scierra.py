@@ -1,4 +1,4 @@
-from sim import Simulator
+from scierra.sim import Simulator
 
 if __name__ == '__main__':
     flag = True

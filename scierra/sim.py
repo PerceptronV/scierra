@@ -1,5 +1,5 @@
-from compile import build, run
-from utils import gen_name, working_dir, count, replace_string, replace_comment, count_fors, empty_couts
+from scierra.compile import build, run
+from scierra.utils import gen_name, working_dir, count, replace_string, replace_comment, count_fors, empty_couts
 import os
 
 OUT_SUPPORT = [
