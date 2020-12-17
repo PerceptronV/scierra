@@ -106,31 +106,48 @@ Demo of the above program running in a terminal with Scierra.
 
 * `<esc>`: Terminates Scierra.
 
-* Code keywords
+#### Code keywords
 
-   Put the following keywords at the start of each block of your code for special operations.
+Put the following keywords at the start of each block of your code for special operations.
 
-   * `<`: If you put `<` before a single-line statement and don't include any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements.
+* `<`: If you put `<` before a single-line statement and don't include any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements.
    
-   * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. E.g.
+* `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. E.g.
    
-          ++> <prep>
+       ++> <prep>
 
-          --> #include<vector>
+       --> #include<vector>
       
-      Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
+   Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-   * `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' part of the program.
+* `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' part of the program.
       
-      Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
+   Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-   * `<main>`: Forcefully specifies that the block of code that you type belongs to the 'mains' part of the program.
+* `<main>`: Forcefully specifies that the block of code that you type belongs to the 'mains' part of the program.
    
-      Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
+   Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
 
 ## Docs
 
 ### Anatomy of a C++ Program in Scierra
+
+Scierra divides a C++ program into three distinct sections: the 'preprocessor' section, the 'globals' section, and the 'main' section. 
+
+When you enter a block of code in Scierra, it automatically categorises it into one of these three sections based on syntactical keywords and expressions. You can override this automatic behaviour by using one of the [code keywords](#Code-Keywords).
+
+#### Keywords and Expressions Table
+
+Here is a table showing the different keywords and expressions that Scierra uses to categorise yur block of code:
+
+| Preprocessor Section | Globals Section | Main Section |
+| :---: | :---: | :---: |
+| `#include` statement | `class` keyword | _Anything Else_ |
+| `#define` statement | `struct` keyword |  |
+| `typedef` keyword | `return` keyword |  |
+| `using` keyword | `void` keyword |  |
+|  | `template` keyword |  |
+|  | `typename` keyword |  |
 
 ## LICENSE
 [Apache License 2.0](LICENSE)
