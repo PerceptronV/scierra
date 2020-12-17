@@ -104,6 +104,8 @@ Demo of the above program running in a terminal with Scierra.
 
 ### Keywords
 
+Type these special keywords at any stage when writing your code to perform special functions.
+
 * `<print>`: Prints out the code you've written so far.
 
 * `<restart>`: Restarts another interpreter session and forgets all local variables.
