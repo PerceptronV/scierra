@@ -38,9 +38,13 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 ### Install with PIP
 
-Install with pip using:
+Install with PIP using:
 
     $ pip install scierra
+
+or (for LINUX users):
+
+
   
 After installation, run Scierra on your terminal using:
 
@@ -67,3 +71,6 @@ Launch `scierra` in your terminal,
    * `<prep>`
    
    * `<glob>`
+
+## LICENSE
+[Apache License 2.0](LICENSE)
