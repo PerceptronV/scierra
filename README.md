@@ -1,6 +1,6 @@
 # Scierra
 
-_WHY COMPILE EVERYTHING AGAIN WHEN THERE'S JUST A LITTLE BUG?_
+_DYNAMIC TYPING & 1-LINE CODE FOR C++_
 
 Scierra [see-eh-rah] is a **S**imulated **C**++ **I**nt**er**preter with **R**ecurrent **A**daptation.
 
