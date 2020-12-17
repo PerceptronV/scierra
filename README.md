@@ -98,7 +98,7 @@ cout << CYAN << "10 factorial is: " << factorial(10) << DEFAULT << endl;
 <esc>
 ```
 
-Demo of the above program running in a terminal with Scierra.
+Below is a demo of the above program running in a terminal with Scierra:
 
 ![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
 
