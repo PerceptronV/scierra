@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="scierra",
-    version="0.1",
+    version="0.5",
     author="PerceptronV",
     author_email="neutrinovs@gmail.com",
     description="A Simulated C++ Interpreter",
@@ -20,8 +20,9 @@ setuptools.setup(
     },
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent",
         "License :: OSI Approved :: Apache Software License",
-        "Operating System :: Microsoft :: Windows",
         "Topic :: Software Development :: Interpreters",
         "Development Status :: 4 - Beta",
         "Natural Language :: English"

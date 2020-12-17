@@ -1,5 +1,7 @@
 import os, random
 
+WHITESPACES = [' ', '\r', '\t', '\n']
+
 
 def rndstr(l):
     s = ''
@@ -19,11 +21,34 @@ def working_dir():
     return os.getcwd()
 
 
-def count(str, k, syntax=False):
+def str_equal(str, segments, idx):
+    l = len(segments)
+    if idx is None:
+        return False
+    if l == 1:
+        str_len = len(segments[0])
+        return str[idx:idx+str_len] == segments[0]
+    else:
+        str_len = len(segments[0])
+        if str[idx:idx+str_len] != segments[0]:
+            return False
+        return str_equal(str, segments[1:], cross_whitespaces(str, idx+str_len-1))
+
+
+def count(str, k, syntax=False, exp = False):
+    '''
+    syntax & exp ARGS CANNOT BOTH BE TRUE!!!
+    OTHERWISE PROGRAM WILL BE UNPREDICTABLE
+    '''
+    if exp:
+        segments = k.split('*')
+    else:
+        segments = k
+
     r = 0
     l = len(k)
 
-    if str[:l] == k:
+    if str_equal(str, segments, 0):
         if syntax:
             if not str[l].isalnum():
                 r += 1
@@ -31,7 +56,7 @@ def count(str, k, syntax=False):
             r += 1
 
     for i in range(1, len(str)):
-        if str[i:i+l] == k:
+        if str_equal(str, segments, i):
             if syntax:
                 if not str[i - 1].isalnum() and not str[i + l].isalnum():
                     r += 1
@@ -42,15 +67,27 @@ def count(str, k, syntax=False):
 
 
 def skip_whitespaces(str, index):
-    WHITESPACES = [' ', '\r', '\t', '\n']
-
     i = index + 1
+    if i == len(str):
+        return None
     while str[i] in WHITESPACES:
         i += 1
         if i == len(str):
             return None
 
     return str[i]
+
+
+def cross_whitespaces(str, index):
+    i = index + 1
+    if i == len(str):
+        return None
+    while str[i] in WHITESPACES:
+        i += 1
+        if i == len(str):
+            return None
+
+    return i
 
 
 def count_fors(str):
@@ -60,6 +97,29 @@ def count_fors(str):
             r += 1
 
     return r
+
+
+def min_semis(proc):
+    fors = count_fors(proc)
+    if fors > 0:
+        ret = fors * 2
+    elif '#' in proc or count(proc, 'template', syntax=True) > 0:
+        ret = 0
+    else:
+        ret = 1
+    return ret
+
+
+def isblock(proc):
+    ret = True
+
+    if count(proc, '{') > count(proc, '}'):
+        ret = False
+
+    if count(proc, ';') < min_semis(proc):
+        ret = False
+
+    return ret
 
 
 def empty_couts(str):

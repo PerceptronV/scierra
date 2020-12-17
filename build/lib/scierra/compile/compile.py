@@ -9,7 +9,7 @@ def build(filedir, filename, outname):
     a = os.system(cmd)
 
     if a != 0:
-        print(a)
+        print('Compilation terminated with return code {}'.format(a))
         return False
     else:
         return True
