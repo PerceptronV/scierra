@@ -4,7 +4,7 @@ RUN & DEBUG as you TYPE with Scierra C++ Interpreter!
 
 Scierra [_see-eh-rah_] is a **S**imulated **C**++ **I**nt**er**preter with **R**ecurrent **A**daptation.
 
-It is a Python package that makes use of the GCC CLI to simulate an interpreted C++ environment.
+Simply launch Scierra on the terminal and type `cout << "Hello, World!";`. Yes. That's a complete program in Scierra.
 
 * [Example](#Example)
 
@@ -28,8 +28,11 @@ It is a Python package that makes use of the GCC CLI to simulate an interpreted 
 
 ### Prerequisites:
 
-* GCC (GNU Compiler Collection) must be **installed** and **added to PATH**.
-    This allows Python to access G++ through the command line. MinGW has been tested to work on Windows.
+* _Python_ must be **installed** and **added to PATH**.
+   The key ideas of Scierra and it's CLI have been implemented in Python.
+
+* _GCC_ (GNU Compiler Collection) must be **installed** and **added to PATH**.
+   This allows Python to access G++ through the command line. If you're a Linux user, there's a good chance that GCC tools are already included in your distro. Users of other operating systems like Windows or MacOS may need to make additional installations. A MinGW installation has been tested to work with Scierra on Windows.
 
 ### Install with PIP
 
@@ -37,7 +40,7 @@ Install with pip using:
 
     $ pip install scierra
   
-After installation, run on command-line using:
+After installation, run Scierra on your terminal using:
 
     $ scierra
 
