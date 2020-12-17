@@ -22,12 +22,11 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 ## Example
 
-***An sample program running on the Scierra interpreter: ***
+***An sample program running on the Scierra interpreter:***
 
 ```cpp
-++> cout << "Hello, World!\n";
+++> cout << "Hello, World!";
 Hello, World!
-
 ++> int factorial(int n){
 
 -->     if (n==1 || n==0)
@@ -38,15 +37,9 @@ Hello, World!
 
 --> }
 
-++> cout << "10 factorial is: " << factorial(10) << endl;
+++> cout << "10 factorial is: " << factorial(10);
 10 factorial is: 3628800
-
-++>
 ```
-
-Live demo of the above program running in a terminal with Scierra.
-
-![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
 
 ## Installation
 
@@ -78,7 +71,7 @@ After installation, run Scierra on your terminal using:
 
 ### Quick Start
 
-Launch `scierra` in your terminal, and try the following simple program.
+Launch `scierra` in your terminal, and try the full sample program below.
 
 It demonstrates Scierra's ability to see whether the line of code you just typed belongs to the `main` function section, global declarations section, or preprocessors section. The `<esc>` command closes the interpreter.
 
@@ -114,6 +107,10 @@ I am SCIERRA
 
 ++> <esc>
 ```
+
+Live demo of the above program running in a terminal with Scierra.
+
+![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
 
 ### Keywords
 
