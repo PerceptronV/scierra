@@ -14,9 +14,9 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
     * [Install with PIP](#Install-with-PIP)
 
-* [Usage](#Quick-Start)
+* [Usage](#Usage)
 
-   * [Basic](#Basic)
+   * [Quick Start](#Quick-Start)
    
    * [Keywords](#Keywords)
 
