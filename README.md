@@ -138,7 +138,7 @@ When you enter a block of code in Scierra, it automatically categorises it into 
 
 #### Keywords and Expressions Table
 
-Here is a table showing the different keywords and expressions that Scierra uses to categorise yur block of code:
+Here is a table showing the different keywords and expressions that Scierra uses to categorise yur block of code.
 
 | Preprocessor Section | Globals Section | Main Section |
 | :---: | :---: | :---: |
