@@ -1,6 +1,6 @@
 # Scierra
 
-_DYNAMIC TYPING & 1-LINE CODE FOR C++_
+_RUN & DEBUG as you TYPE with Scierra C++ Interpreter_
 
 Scierra [see-eh-rah] is a **S**imulated **C**++ **I**nt**er**preter with **R**ecurrent **A**daptation.
 
