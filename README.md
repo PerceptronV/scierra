@@ -73,41 +73,25 @@ After installation, run Scierra on your terminal using:
 
 ### Quick Start
 
-Launch `scierra` in your terminal, and try the full sample program below.
+Launch `scierra` in your terminal, and try pasting in the full sample program below.
 
 It demonstrates Scierra's ability to see whether the line of code you just typed belongs to the `main` function section, global declarations section, or preprocessors section. The `<esc>` command closes the interpreter.
 
 ```cpp
-++> cout << "Hello, World!\n";
-Hello, World!
+cout << "Hello, World!\n";
+#define CYAN "\033[36m"
+#define GREEN "\033[32m"
+#define DEFAULT "\033[0m"
+cout << GREEN << "I am SCIERRA" << DEFAULT << endl;
 
-++> #define CYAN "\033[36m"
+int factorial(int n){
+    if (n==1 || n==0)
+        return 1;
+    else return n * factorial(n-1);
+}
+cout << CYAN << "10 factorial is: " << factorial(10) << DEFAULT << endl;
 
-++> #define GREEN "\033[32m"
-
-++> #define DEFAULT "\033[0m"
-
-++> cout << GREEN << "I am SCIERRA" << DEFAULT << endl;
-I am SCIERRA
-
-++>
-
-++> int factorial(int n){
-
--->     if (n==1 || n==0)
-
--->         return 1;
-
--->     else return n * factorial(n-1);
-
---> }
-
-++> cout << CYAN << "10 factorial is: " << factorial(10) << DEFAULT << endl;
-10 factorial is: 3628800
-
-++>
-
-++> <esc>
+<esc>
 ```
 
 Demo of the above program running in a terminal with Scierra.
@@ -116,33 +100,27 @@ Demo of the above program running in a terminal with Scierra.
 
 ### Keywords
 
-* `<print>`
+* `<print>`: Prints out the code you've written so far.
 
-   Prints out the code you've written so far.
+* `<restart>`: Restarts another interpreter session and forgets all local variables.
 
-* `<restart>`
-
-   Restarts another interpreter session and forgets all local variables.
-
-* `<esc>`
-
-   Terminates Scierra.
+* `<esc>`: Terminates Scierra.
 
 * Code keywords
 
    Put the following keywords at the start of each block of your code for special operations.
 
-   * `<`
+   * `<`: If you put `<` before a single-line statement and don't include any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements.
    
-      If you put `<` before a single-line statement and don't include any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. Works with all data types, variables and classes that supports `cout` statements. Also supports printing the return value of functions.
+   * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra). E.g.
    
-   * `<prep>`
+          ++> <prep>
+
+          --> #include<vector>
    
-   Forcefully specify that the block of code that you've just typed belongs to 
+   * `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' part of the program. Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-   * `<glob>`
-   
-   * `<main>`
+   * `<main>`: Forcefully specifies that the block of code that you type belongs to the 'mains' part of the program. Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
 
 ## Docs
 
