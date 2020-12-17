@@ -12,15 +12,23 @@ Scierra is a Python package that makes use of the GCC CLI to simulate an interpr
 
     * [Install with PIP](#Install-with-PIP)
 
+* [Usage](#Usage)
+
+   * [Basic](#)
+
 ## Example
+
 ![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
 
 ## Installation
+
 ### Prerequisites:
+
 * GCC (GNU Compiler Collection) must be **installed** and **added to PATH**.
     This allows Python to access G++ through the command line. MinGW has been tested to work on Windows.
 
 ### Install with PIP
+
 Install with pip using:
 
     $ pip install scierra
@@ -28,3 +36,25 @@ Install with pip using:
 After installation, run on command-line using:
 
     $ scierra
+
+## Usage
+
+### Basic
+
+Launch `scierra` in your terminal, 
+
+### Keywords
+
+* `<print>`
+
+* `<restart>`
+
+* `<esc>`
+
+* Code keywords
+
+   * `<`
+   
+   * `<prep>`
+   
+   * `<glob>`
