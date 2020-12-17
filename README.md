@@ -4,7 +4,7 @@ Scierra [_see-eh-rah_] is a **S**imulated **C**++ **I**nt**er**preter with **R**
 
 In human words, it's a interactive interpreter for C++, which allows you to run and debug your program immediately as you type. Well, basically. But the implementation is slightly trickier.
 
-To get a quick start, simply launch Scierra on the terminal and type `cout << "Hello, World!";`. Yes. That's a complete program in Scierra.
+To get a quick start, simply launch Scierra on the terminal and type `cout << "Hello, World!";`. Yes. That's a complete C++ program in Scierra.
 
 * [Example](#Example)
 
@@ -19,6 +19,12 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
    * [Quick Start](#Quick-Start)
    
    * [Keywords](#Keywords)
+
+* [Docs](#Docs)
+
+   * [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C++-Program-in-Scierra)
+
+* [LICENSE](#LICENSE)
 
 ## Example
 
@@ -58,10 +64,6 @@ Hello, World!
 Install with PIP using:
 
     $ pip install scierra
-
-or (for LINUX users):
-
-
   
 After installation, run Scierra on your terminal using:
 
@@ -108,7 +110,7 @@ I am SCIERRA
 ++> <esc>
 ```
 
-Live demo of the above program running in a terminal with Scierra.
+Demo of the above program running in a terminal with Scierra.
 
 ![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
 
@@ -116,17 +118,35 @@ Live demo of the above program running in a terminal with Scierra.
 
 * `<print>`
 
+   Prints out the code you've written so far.
+
 * `<restart>`
+
+   Restarts another interpreter session and forgets all local variables.
 
 * `<esc>`
 
+   Terminates Scierra.
+
 * Code keywords
+
+   Put the following keywords at the start of each block of your code for special operations.
 
    * `<`
    
+      If you put `<` before a single-line statement and don't include any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. Works with all data types, variables and classes that supports `cout` statements. Also supports printing the return value of functions.
+   
    * `<prep>`
    
+   Forcefully specify that the block of code that you've just typed belongs to 
+   
    * `<glob>`
+   
+   * `<main>`
+
+## Docs
+
+### Anatomy of a C++ Program in Scierra
 
 ## LICENSE
 [Apache License 2.0](LICENSE)
