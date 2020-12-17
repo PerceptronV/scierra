@@ -6,6 +6,10 @@ In human words, it's a interactive interpreter for C++, which allows you to run 
 
 To get a quick start, simply launch Scierra on the terminal and type `cout << "Hello, World!";`. Yes, that's a complete C++ program in Scierra!
 
+**WARNING**: Scierra is still under development. Even though many vital aspects of C++ (e.g. function definition, templates, classes) are already supported, Scierra does not handle input statements very well. This is unfortunately keeping Scierra in Beta...
+
+## Navigation
+
 * [Example](#Example)
 
 * [Installation](#Installation)
