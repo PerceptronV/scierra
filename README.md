@@ -1,8 +1,8 @@
 # Scierra
 
-_RUN & DEBUG as you TYPE with Scierra C++ Interpreter_
+RUN & DEBUG as you TYPE with Scierra C++ Interpreter!
 
-Scierra [see-eh-rah] is a **S**imulated **C**++ **I**nt**er**preter with **R**ecurrent **A**daptation.
+Scierra [_see-eh-rah_] is a **S**imulated **C**++ **I**nt**er**preter with **R**ecurrent **A**daptation.
 
 It is a Python package that makes use of the GCC CLI to simulate an interpreted C++ environment.
 
