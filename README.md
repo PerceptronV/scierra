@@ -120,9 +120,15 @@ Put the following keywords at the start of each block of your code for special o
    
 * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. E.g.
    
-       ++> <prep>
-
-       --> #include<vector>
+    ```cpp
+    ++> <prep>
+    
+    --> const int Answer_to_Ultimate_Question_of_Life = 42;
+    
+    ++> 
+    ```
+    
+   This puts `const int Answer_to_Ultimate_Question_of_Life = 42;` in the 'preprocessors' section outside the `main` function, which it would normally be placed in.
       
    Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
