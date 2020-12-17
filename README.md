@@ -22,6 +22,8 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 ## Example
 
+***An sample program running on the Scierra interpreter: ***
+
 ```cpp
 ++> cout << "Hello, World!\n";
 Hello, World!
@@ -55,9 +57,9 @@ I am SCIERRA
 ++> <esc>
 ```
 
-![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
-
 Live demo of the above program running in a terminal with Scierra.
+
+![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
 
 ## Installation
 
