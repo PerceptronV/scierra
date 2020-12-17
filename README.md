@@ -128,7 +128,7 @@ Put the following keywords at the start of each block of your code for special o
     ++> 
     ```
    
-* `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. E.g.
+* `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' section of the program. E.g.
    
     ```cpp
     ++> <prep>
@@ -142,11 +142,11 @@ Put the following keywords at the start of each block of your code for special o
       
    Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-* `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' part of the program.
+* `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' section of the program.
       
    Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-* `<main>`: Forcefully specifies that the block of code that you type belongs to the 'mains' part of the program.
+* `<main>`: Forcefully specifies that the block of code that you type belongs to the `main` function in the program.
    
    Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
 
@@ -154,7 +154,11 @@ Put the following keywords at the start of each block of your code for special o
 
 ### Anatomy of a C++ Program in Scierra
 
-Scierra divides a C++ program into three distinct sections: the 'preprocessor' section, the 'globals' section, and the 'main' section. 
+Scierra divides a C++ program into three distinct sections: the 'preprocessor' section, the 'globals' section, and the 'main' section.
+
+The 'preprocessor' section comes at the top of the program. This is where libraries are imported and namespaces are defined. Refer to the [keywords and expressions table](#Keywords-and-Expressions-Table) for the full list of keywords and expressions that Scierra uses to categorise a block of code. By default i Scierra, the libraries `iostream`, `sstream`, `fstream`, `vector` and `string` are already imported, and the namespace `std` is under use.
+
+The 'globals' section is reserved for global class and function declarations, while the 'main' section goes into the `main` function of your C++ program.
 
 When you enter a block of code in Scierra, it automatically categorises it into one of these three sections based on syntactical keywords and expressions. You can override this automatic behaviour by using one of the [code keywords](#Code-Keywords).
 
