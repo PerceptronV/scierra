@@ -65,7 +65,7 @@ Hello, World!
 
 ### Install with PIP
 
-Install with PIP using:
+Install Scierra with PIP using:
 
     $ pip install scierra
   
