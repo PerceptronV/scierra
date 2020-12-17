@@ -14,7 +14,7 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
     * [Install with PIP](#Install-with-PIP)
 
-* [Usage](#Usage)
+* [Usage](#Quick-Start)
 
    * [Basic](#Basic)
    
@@ -52,9 +52,44 @@ After installation, run Scierra on your terminal using:
 
 ## Usage
 
-### Basic
+### Quick Start
 
-Launch `scierra` in your terminal, 
+Launch `scierra` in your terminal, and try the following simple program.
+
+It demonstrates Scierra's ability to see whether the line of code you just typed belongs to the `main` function section, global declarations section, or preprocessors section. The `<esc>` command closes the interpreter.
+
+```cpp
+++> cout << "Hello, World!\n";
+Hello, World!
+
+++> #define CYAN "\033[36m"
+
+++> #define GREEN "\033[32m"
+
+++> #define DEFAULT "\033[0m"
+
+++> cout << GREEN << "I am SCIERRA" << DEFAULT << endl;
+I am SCIERRA
+
+++>
+
+++> int factorial(int n){
+
+-->     if (n==1 || n==0)
+
+-->         return 1;
+
+-->     else return n * factorial(n-1);
+
+--> }
+
+++> cout << CYAN << "10 factorial is: " << factorial(10) << DEFAULT << endl;
+10 factorial is: 3628800
+
+++>
+
+++> <esc>
+```
 
 ### Keywords
 
