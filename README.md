@@ -22,7 +22,42 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 ## Example
 
+```cpp
+++> cout << "Hello, World!\n";
+Hello, World!
+
+++> #define CYAN "\033[36m"
+
+++> #define GREEN "\033[32m"
+
+++> #define DEFAULT "\033[0m"
+
+++> cout << GREEN << "I am SCIERRA" << DEFAULT << endl;
+I am SCIERRA
+
+++>
+
+++> int factorial(int n){
+
+-->     if (n==1 || n==0)
+
+-->         return 1;
+
+-->     else return n * factorial(n-1);
+
+--> }
+
+++> cout << CYAN << "10 factorial is: " << factorial(10) << DEFAULT << endl;
+10 factorial is: 3628800
+
+++>
+
+++> <esc>
+```
+
 ![Basic Scierra Demo](static/basic_demo.png "Scierra Basic Demo")
+
+Live demo of the above program running in a terminal with Scierra.
 
 ## Installation
 
