@@ -112,15 +112,21 @@ Demo of the above program running in a terminal with Scierra.
 
    * `<`: If you put `<` before a single-line statement and don't include any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements.
    
-   * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra). E.g.
+   * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. E.g.
    
           ++> <prep>
 
           --> #include<vector>
+      
+      Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-   * `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' part of the program. Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
+   * `<glob>`: Forcefully specifies that the block of code that you type belongs to the 'globals' part of the program.
+      
+      Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
    
-   * `<main>`: Forcefully specifies that the block of code that you type belongs to the 'mains' part of the program. Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
+   * `<main>`: Forcefully specifies that the block of code that you type belongs to the 'mains' part of the program.
+   
+      Refer to: [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra).
 
 ## Docs
 
