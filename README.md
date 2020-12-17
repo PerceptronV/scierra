@@ -55,11 +55,11 @@ Hello, World!
 
 ### Prerequisites:
 
-* _Python_ must be **installed** and **added to PATH**.
+* **Python** must be **installed** and **added to PATH**.
    
    The key ideas of Scierra and it's CLI have been implemented in Python.
 
-* _GCC_ (GNU Compiler Collection) must be **installed** and **added to PATH**.
+* **GCC** (GNU Compiler Collection) must be **installed** and **added to PATH**.
    
    This allows Python to access G++ through the command line. If you're a Linux user, there's a good chance that GCC tools are already included in your distro. Users of other operating systems like Windows or MacOS may need to make additional installations. MinGW has been tested to work with Scierra on Windows.
 
