@@ -10,19 +10,19 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 * [Installation](#Installation)
 
-        [Prerequisites](#Prerequisites)
+   * [Prerequisites](#Prerequisites)
 
-        [Install with PIP](#Install-with-PIP)
+   * [Install with PIP](#Install-with-PIP)
 
 * [Usage](#Usage)
 
    * [Quick Start](#Quick-Start)
    
-   [Keywords](#Keywords)
+   * [Keywords](#Keywords)
 
 * [Docs](#Docs)
 
-   [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C++-Program-in-Scierra)
+   * [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C++-Program-in-Scierra)
 
 * [LICENSE](#LICENSE)
 
