@@ -79,7 +79,7 @@ After installation, run Scierra on your terminal using:
 
 Launch `scierra` in your terminal, and try pasting in the full sample program below.
 
-It demonstrates Scierra's ability to see whether the line of code you just typed belongs to the `main` function section, global declarations section, or preprocessors section. The `<esc>` command closes the interpreter.
+Note Scierra's ability to automatically categorise whether the block of code you've just typed belongs to the `main` function section, global declarations section, or preprocessors section (refer to the [anatomy of a C++ program in Scierra](#Anatomy-of-a-C-Program-in-Scierra)). The `<esc>` command closes the interpreter.
 
 ```cpp
 cout << "Hello, World!\n";
