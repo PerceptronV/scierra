@@ -116,7 +116,17 @@ Type these special keywords at any stage when writing your code to perform speci
 
 Put the following keywords at the start of each block of your code for special operations.
 
-* `<`: Using `<` before a single-lined statement without any semicolons (e.g. `<10+23` or `<"Hey!"`), Scierra automatically outputs the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements.
+* `<`: Using this keyword before a single-lined statement without any semicolons (e.g. `<10+23` or `<"Hey!"`) makes Scierra automatically output the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements. You can even join multiple outputs together! E.g.
+
+    ```cpp
+    ++> int x = 132;
+    
+    ++> < x*7
+    924
+    ++> < x%127 << x%12 << "COOL!"
+    50COOL!
+    ++> 
+    ```
    
 * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' part of the program. E.g.
    
