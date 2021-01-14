@@ -1,3 +1,8 @@
+from scierra.compile import build, run
+from scierra.utils import gen_name, working_dir, count, replace_string, replace_comment, empty_couts, isblock
+import os
+import platform
+
 KEYWORDS = {
     'exp_prep':[
         '#*include',
