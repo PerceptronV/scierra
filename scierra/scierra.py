@@ -5,7 +5,7 @@ def main():
     res = True
     simul = Simulator()
 
-    print('Scierra C++ Interpreter\nCopyright (c) PerceptronV 2020')
+    print('Scierra C++ Interpreter v0.6\nCopyright (c) PerceptronV 2020')
     line = input('\n++> ')
     stripline = line.strip()
 

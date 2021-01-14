@@ -1,8 +1,3 @@
-from scierra.compile import build, run
-from scierra.utils import gen_name, working_dir, count, replace_string, replace_comment, empty_couts, isblock
-import os
-import platform
-
 KEYWORDS = {
     'exp_prep':[
         '#*include',
@@ -82,10 +77,10 @@ class Simulator(object):
                     if count(proc, i, exp=True) > 0:
                         section = 'prep'
 
-            for i in str_dict:
-                proc = proc.replace(i, str_dict[i])
             for i in com_dict:
                 proc = proc.replace(i, com_dict[i])
+            for i in str_dict:
+                proc = proc.replace(i, str_dict[i])
             self.buff = proc
 
             if section == 'prep':
@@ -114,9 +109,9 @@ class Simulator(object):
         code = self.gen_code(preps, globs, mains)
 
         if src_name is None:
-            src_name = gen_name(self.wdir, '.cpp')
+            src_name = gen_name(self.wdir, 'scierra-', '.cpp')
         if out_name is None:
-            out_name = gen_name(self.wdir, FILE_EXTENSION[platform.system()])
+            out_name = gen_name(self.wdir, 'scierra-', FILE_EXTENSION[platform.system()])
 
         f = open(src_name, 'w')
         f.write(code)
@@ -124,7 +119,7 @@ class Simulator(object):
 
         ret = build(self.wdir, src_name, out_name)
         if ret:
-            ret = run(self.wdir, out_name) == 0
+            ret = run(self.wdir, out_name)==0
             os.remove(os.path.join(self.wdir, out_name))
 
         os.remove(os.path.join(self.wdir, src_name))

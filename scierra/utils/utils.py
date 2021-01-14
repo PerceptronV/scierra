@@ -10,10 +10,10 @@ def rndstr(l):
     return s
 
 
-def gen_name(dir, ext, l=8):
-    s = rndstr(l) + ext
+def gen_name(dir, prefix, ext, l=8):
+    s = prefix + rndstr(l) + ext
     while os.path.exists(os.path.join(dir, s)):
-        s = rndstr(l) + ext
+        s = prefix + rndstr(l) + ext
     return s
 
 
@@ -103,7 +103,7 @@ def min_semis(proc):
     fors = count_fors(proc)
     if fors > 0:
         ret = fors * 2
-    elif '#' in proc or count(proc, 'template', syntax=True) > 0:
+    elif '#' in proc or fors > 0:
         ret = 0
     else:
         ret = 1
@@ -111,15 +111,16 @@ def min_semis(proc):
 
 
 def isblock(proc):
-    ret = True
+    bracket_complete = True
+    statement_complete = True
 
     if count(proc, '{') > count(proc, '}'):
-        ret = False
+        bracket_complete = False
 
     if count(proc, ';') < min_semis(proc):
-        ret = False
+        statement_complete = False
 
-    return ret
+    return bracket_complete and statement_complete
 
 
 def empty_couts(str):

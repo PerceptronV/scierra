@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="scierra",
-    version="0.5",
+    version="0.6",
     author="PerceptronV",
     author_email="neutrinovs@gmail.com",
     description="A Simulated C++ Interpreter",
