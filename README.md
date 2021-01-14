@@ -177,11 +177,15 @@ Here is a table showing the different keywords and expressions that Scierra uses
 
 ### Unsupported features
 
-Scierra supports most features The following features are not supported by Scierra:
+Scierra supports most features that come with your installed version of GCC.
+
+However, unfortunately the following features are not yet supported by Scierra:
+
+* any expression involving inputs
 
 * lambda expressions
 
-*
+* range-based for loops
 
 ## LICENSE
 [Apache License 2.0](LICENSE)
