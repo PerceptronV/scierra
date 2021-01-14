@@ -27,6 +27,8 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 * [Docs](#Docs)
 
    * [Anatomy of a C++ Program in Scierra](#Anatomy-of-a-C-Program-in-Scierra)
+   
+   * [Unsupported features](#Unsupported-features)
 
 * [LICENSE](#LICENSE)
 
@@ -34,7 +36,7 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 ***An sample program running on the Scierra interpreter:***
 
-```cpp
+```c++
 ++> cout << "Hello, World!";
 Hello, World!
 ++> int factorial(int n){
@@ -81,7 +83,7 @@ Launch `scierra` in your terminal, and try pasting in the full sample program be
 
 Note Scierra's ability to automatically categorise whether the block of code you've just typed belongs to the `main` function section, global declarations section, or preprocessors section (refer to the [anatomy of a C++ program in Scierra](#Anatomy-of-a-C-Program-in-Scierra)). The `<esc>` command closes the interpreter.
 
-```cpp
+```c++
 cout << "Hello, World!\n";
 #define CYAN "\033[36m"
 #define GREEN "\033[32m"
@@ -118,7 +120,7 @@ Put the following keywords at the start of each block of your code for special o
 
 * `<`: Using this keyword before a single-lined statement without any semicolons (e.g. `<10+23` or `<"Hey!"`) makes Scierra automatically output the evaluated value of the statement. It works with all data types, variables and classes that supports `cout` statements. You can even join multiple outputs together! E.g.
 
-    ```cpp
+    ```c++
     ++> int x = 132;
     
     ++> < x*7
@@ -130,7 +132,7 @@ Put the following keywords at the start of each block of your code for special o
    
 * `<prep>`: Forcefully specifies that the block of code that you type belongs to the 'preprocessor' section of the program. E.g.
    
-    ```cpp
+    ```c++
     ++> <prep>
     
     --> const int Answer_to_Ultimate_Question_of_Life = 42;
@@ -172,6 +174,14 @@ Here is a table showing the different keywords and expressions that Scierra uses
 | `using` keyword | `void` keyword |  |
 |  | `template` keyword |  |
 |  | `typename` keyword |  |
+
+### Unsupported features
+
+Scierra supports most features The following features are not supported by Scierra:
+
+* lambda expressions
+
+*
 
 ## LICENSE
 [Apache License 2.0](LICENSE)
