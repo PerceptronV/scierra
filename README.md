@@ -34,7 +34,7 @@ To get a quick start, simply launch Scierra on the terminal and type `cout << "H
 
 ## Example
 
-***An sample program running on the Scierra interpreter:***
+***A sample program running on the Scierra interpreter:***
 
 ```c++
 ++> cout << "Hello, World!";
