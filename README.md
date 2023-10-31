@@ -2,7 +2,7 @@
 
 Scierra [_see-eh-rah_] is a **S**imulated **C**++ **I**nt**er**preter with **R**ecurrent **A**daptation.
 
-In human words, it's a interactive interpreter for C++, which allows you to run and debug your program immediately as you type. Well, basically. But the implementation is slightly trickier.
+In human words, it's an interactive interpreter for C++, which allows you to run and debug your program immediately as you type. Well, basically. But the implementation is slightly trickier. You can read about it more in my [blog post](https://perceptronv.github.io/scierra/langs/2021/01/14/Introducing-Scierra.html).
 
 To get a quick start, simply launch Scierra on the terminal and type `cout << "Hello, World!";`. Yes, that's a complete C++ program in Scierra!
 
